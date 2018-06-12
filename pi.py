@@ -26,8 +26,9 @@ def pi():
     return +s               # unary plus applies the new precision
 
 start_time = time.time()
-decimal.getcontext().prec = 5001
+decimal.getcontext().prec = 3001
 pi = pi()
 end_time = time.time()
 print(pi)
+print("Pi Digits: %s" % decimal.getcontext().prec)
 print("Time: %s seconds" % (end_time - start_time))
