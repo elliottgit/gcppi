@@ -26,7 +26,7 @@ def pi():
     return +s               # unary plus applies the new precision
 
 start_time = time.time()
-decimal.getcontext().prec = 3001
+decimal.getcontext().prec = 2001
 pi = pi()
 end_time = time.time()
 print(pi)
